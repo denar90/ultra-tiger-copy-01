@@ -2,6 +2,8 @@ const _ = require('lodash');
 
 const isDev = process.env.NODE_ENV === 'development';
 
+console.log("Branch")
+console.log(process.env.BRANCH || process.env.CONTENTFUL_ENVIRONMENT || 'master');
 
 module.exports = {
     plugins: [
